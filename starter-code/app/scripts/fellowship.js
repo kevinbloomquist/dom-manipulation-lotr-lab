@@ -42,7 +42,9 @@ console.log("hi");
       var mkhead = document.createElement("h1");
       mkhead.innerHTML=lands[i];
       mkart.appendChild(mkhead);
-      body.appendChild(mkart);
+      MEsection.appendChild(mkart);
+      body.appendChild(MEsection);
+
 
       console.log(addplaces);
 
