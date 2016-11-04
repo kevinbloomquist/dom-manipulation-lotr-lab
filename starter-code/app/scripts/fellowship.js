@@ -65,14 +65,19 @@ function makeHobbits() {
 console.log("Tutti");
 var grabshire = document.querySelector("article.aThe.Shire");
 console.log(grabshire);
-var mkhobbitul = grabshire.createElement("ul");
+var mkhobbitul = document.createElement("ul");
 console.log(mkhobbitul);
-var addhobbits = function(){
-    for (var i = 0; i<hobbits.length; i++) {
 
-  console.log(hobbits[i]);
+    for (var i = 0; i<hobbits.length; i++) {
+      var mkhobbitli= document.createElement("li");
+      mkhobbitli.innerHTML=hobbits[i];
+      mkhobbitul.appendChild(mkhobbitli);
+      grabshire.appendChild(mkhobbitul);
+
+  console.log(mkhobbitli);
+  console.log(mkhobbitul);
+
  }
-};
 }
 makeHobbits();
 
