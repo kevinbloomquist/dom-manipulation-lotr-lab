@@ -1,4 +1,4 @@
-console.log("Linked.");
+//console.log("Linked.");
 
 // Dramatis Personae
 var hobbits = [
@@ -28,8 +28,28 @@ function makeMiddleEarth() {
   // inside, add each land as an article tag
   // inside each article tag include an h1 with the name of the land
   // append middle-earth to your document body
-}
+  
+console.log("hi");
+  
+  var MEsection = document.createElement("section");
+  MEsection.setAttribute("id", "middle-earth");
+  
+  console.log(MEsection);
 
+  var addplaces = function() {
+    for (var i = 0; i<lands.length; i++) {
+      var mkart = document.createElement("article");
+      var mkhead = document.createElement("h1");
+      mkhead.innerHTML=lands[i];
+      mkart.appendChild(mkhead);
+      body.appendChild(mkart);
+
+      console.log(addplaces);
+
+      }    
+    };
+    addplaces();
+}
 makeMiddleEarth();
 
 
