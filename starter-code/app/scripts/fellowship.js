@@ -72,12 +72,12 @@ console.log(mkhobbitul);
       var mkhobbitli= document.createElement("li");
       mkhobbitli.innerHTML=hobbits[i];
       mkhobbitul.appendChild(mkhobbitli);
-      grabshire.appendChild(mkhobbitul);
 
   console.log(mkhobbitli);
-  console.log(mkhobbitul);
 
  }
+  grabshire.appendChild(mkhobbitul);
+  console.log(mkhobbitul);
 }
 makeHobbits();
 
@@ -89,6 +89,11 @@ function keepItSecretKeepItSafe() {
   // give the div a class of 'magic-imbued-jewelry'
   // add an event listener so that when a user clicks on the ring, the nazgulScreech function (provided) is invoked
   // add the ring as a child of Frodo
+  var oneRing = document.createElement("div");
+  oneRing.setAttribute("id","the-ring");
+  conole.log(oneRing);
+
+
 }
 
 
