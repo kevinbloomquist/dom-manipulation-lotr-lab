@@ -67,10 +67,12 @@ var grabshire = document.querySelector("article.aThe.Shire");
 console.log(grabshire);
 var mkhobbitul = grabshire.createElement("ul");
 console.log(mkhobbitul);
+var addhobbits = function(){
     for (var i = 0; i<hobbits.length; i++) {
-      
+
   console.log(hobbits[i]);
  }
+};
 }
 makeHobbits();
 
