@@ -42,6 +42,7 @@ console.log("hi");
       var mkhead = document.createElement("h1");
       mkhead.innerHTML=lands[i];
       mkhead.setAttribute("class", lands[i]);
+      mkart.setAttribute("class", "a"+lands[i]);
       mkart.appendChild(mkhead);
       MEsection.appendChild(mkart);
       body.appendChild(MEsection);
@@ -62,8 +63,12 @@ function makeHobbits() {
   // display an unordered list of hobbits in the shire (which is the first article tag on the page)
   // give each hobbit a class of hobbit
 console.log("Tutti");
-
- for (var i = 0; i<hobbits.length; i++) {
+var grabshire = document.querySelector("article.aThe.Shire");
+console.log(grabshire);
+var mkhobbitul = grabshire.createElement("ul");
+console.log(mkhobbitul);
+    for (var i = 0; i<hobbits.length; i++) {
+      
   console.log(hobbits[i]);
  }
 }
