@@ -41,6 +41,7 @@ console.log("hi");
       var mkart = document.createElement("article");
       var mkhead = document.createElement("h1");
       mkhead.innerHTML=lands[i];
+      mkhead.setAttribute("class", lands[i]);
       mkart.appendChild(mkhead);
       MEsection.appendChild(mkart);
       body.appendChild(MEsection);
@@ -60,7 +61,13 @@ makeMiddleEarth();
 function makeHobbits() {
   // display an unordered list of hobbits in the shire (which is the first article tag on the page)
   // give each hobbit a class of hobbit
+console.log("Tutti");
+
+ for (var i = 0; i<hobbits.length; i++) {
+  console.log(hobbits[i]);
+ }
 }
+makeHobbits();
 
 
 // Part 3
@@ -71,6 +78,7 @@ function keepItSecretKeepItSafe() {
   // add an event listener so that when a user clicks on the ring, the nazgulScreech function (provided) is invoked
   // add the ring as a child of Frodo
 }
+
 
 
 // Part 4
