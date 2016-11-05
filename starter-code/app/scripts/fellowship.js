@@ -29,13 +29,13 @@ function makeMiddleEarth() {
   // inside each article tag include an h1 with the name of the land
   // append middle-earth to your document body
   
-console.log("hi");
-  
+console.log("one");
+  //make and id middle earth section
   var MEsection = document.createElement("section");
   MEsection.setAttribute("id", "middle-earth");
-  
+  //check
   console.log(MEsection);
-
+//make and lable classes for the places buy creating/appending lands-li-ul-ME-body
   var addplaces = function() {
     for (var i = 0; i<lands.length; i++) {
       var mkart = document.createElement("article");
@@ -62,7 +62,8 @@ makeMiddleEarth();
 function makeHobbits() {
   // display an unordered list of hobbits in the shire (which is the first article tag on the page)
   // give each hobbit a class of hobbit
-console.log("Tutti");
+console.log("ring");
+
 var grabshire = document.querySelector("article.aThe.Shire");
 console.log(grabshire);
 var mkhobbitul = document.createElement("ul");
@@ -88,11 +89,19 @@ function keepItSecretKeepItSafe() {
   // give the div a class of 'magic-imbued-jewelry'
   // add an event listener so that when a user clicks on the ring, the nazgulScreech function (provided) is invoked
   // add the ring as a child of Frodo
+  
+console.log("to unite");
+  //make ring div label ring div (id and class) append to body
+  //
   var oneRing = document.createElement("div");
   oneRing.setAttribute("id","the-ring");
   oneRing.setAttribute("class","magic-imbued-jewelry");
   body.appendChild(oneRing);
-  conole.log(oneRing);
+  var grabring= document.querySelector("#the-ring");
+  console.log(grabring);
+  //add screech click event
+  grabring.addEventListener("click", nazgulScreech());
+  conole.log(grabring);
 
 
 }
