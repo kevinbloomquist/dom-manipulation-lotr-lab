@@ -71,9 +71,8 @@ console.log(mkhobbitul);
     for (var i = 0; i<hobbits.length; i++) {
       var mkhobbitli= document.createElement("li");
       mkhobbitli.innerHTML=hobbits[i];
+      mkhobbitli.setAttribute( "class","hobbit");
       mkhobbitul.appendChild(mkhobbitli);
-
-  console.log(mkhobbitli);
 
  }
   grabshire.appendChild(mkhobbitul);
