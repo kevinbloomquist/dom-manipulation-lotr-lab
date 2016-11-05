@@ -90,10 +90,13 @@ function keepItSecretKeepItSafe() {
   // add the ring as a child of Frodo
   var oneRing = document.createElement("div");
   oneRing.setAttribute("id","the-ring");
+  oneRing.setAttribute("class","magic-imbued-jewelry");
+  body.appendChild(oneRing);
   conole.log(oneRing);
 
 
 }
+keepItSecretKeepItSafe();
 
 
 
