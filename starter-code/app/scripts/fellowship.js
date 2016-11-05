@@ -91,17 +91,19 @@ function keepItSecretKeepItSafe() {
   // add the ring as a child of Frodo
   
 console.log("to unite");
-  //make ring div label ring div (id and class) append to body
+  //make ring div label ring div (id and class) append to frodo
   //
   var oneRing = document.createElement("div");
   oneRing.setAttribute("id","the-ring");
   oneRing.setAttribute("class","magic-imbued-jewelry");
-  body.appendChild(oneRing);
+  var grabfrodo = document.querySelector("li.hobbit");
+  console.log(grabfrodo);
+  grabfrodo.appendChild(oneRing);
   var grabring= document.querySelector("#the-ring");
   console.log(grabring);
+
   //add screech click event
-  grabring.addEventListener("click", nazgulScreech());
-  conole.log(grabring);
+   grabring.addEventListener('click', nazgulScreech());
 
 
 }
