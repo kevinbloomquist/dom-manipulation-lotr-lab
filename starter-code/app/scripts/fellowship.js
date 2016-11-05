@@ -103,7 +103,7 @@ console.log("to unite");
   console.log(grabring);
 
   //add screech click event
-   grabring.addEventListener('click', nazgulScreech());
+   grabring.addEventListener("click", nazgulScreech);
 
 
 }
@@ -118,8 +118,23 @@ function makeBuddies() {
   // create an aside tag
   // attach an unordered list of the 'buddies' in the aside
   // insert your aside as a child element of rivendell
-}
+  console.log("them");
+  var mkaside = document.createElement("aside");
+  var asideul = document.createElement("ul");
+  grabrivendell = document.querySelector("article.a.Rivendell");
 
+  for (i=0; i<buddies; i++) {
+    var mkbudddiesli = document.createElement('li');
+    mkbuddiesli.innerHTML = buddies[i]; 
+    asideul.appendChild(mkbuddiesli);
+
+  }
+mkaside.appendChild(asideul);
+grabrivendell.appendChild(mkaside);
+console.log(mkBuddies);
+
+}
+makeBuddies();
 
 // Part 5
 
