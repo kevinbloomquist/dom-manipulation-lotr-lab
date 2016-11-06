@@ -90,7 +90,7 @@ function keepItSecretKeepItSafe() {
   // add an event listener so that when a user clicks on the ring, the nazgulScreech function (provided) is invoked
   // add the ring as a child of Frodo
   
-console.log("to unite");
+console.log("to rule");
   //make ring div label ring div (id and class) append to frodo
   //
   var oneRing = document.createElement("div");
@@ -131,7 +131,7 @@ function makeBuddies() {
   for (i=0; i<buddies.length; i++) {
     var mkbuddiesli = document.createElement("li");
     mkbuddiesli.innerHTML = buddies[i]; 
-    mkbuddiesli.setAttribute( "class",buddies[i]);
+    mkbuddiesli.setAttribute( "id",buddies[i]);
     mkbuddiesul.appendChild(mkbuddiesli);
   }
   console.log(mkbuddiesul);
@@ -148,8 +148,13 @@ makeBuddies();
 
 function beautifulStranger() {
   // change the 'Strider' textnode to 'Aragorn'
+console.log("all");
+var grabstrider = document.getElementById("Strider");
+console.log(grabstrider);
+grabstrider.nodeValue = "Aragorn";
+grabstrider.innerHTML = "Aragorn";
 }
-
+beautifulStranger();
 
 // Part 6
 
