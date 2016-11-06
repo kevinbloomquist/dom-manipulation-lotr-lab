@@ -129,9 +129,10 @@ function makeBuddies() {
   
    //make list items and populate ul
   for (i=0; i<buddies.length; i++) {
-    var mkbudddiesli = document.createElement("li");
-    mkbudddiesli.innerHTML = buddies[i]; 
-    mkbuddiesul.appendChild(mkbudddiesli);
+    var mkbuddiesli = document.createElement("li");
+    mkbuddiesli.innerHTML = buddies[i]; 
+    mkbuddiesli.setAttribute( "class",buddies[i]);
+    mkbuddiesul.appendChild(mkbuddiesli);
   }
   console.log(mkbuddiesul);
 //put ul in the aside  and the aside in rivendell
