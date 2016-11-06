@@ -119,19 +119,25 @@ function makeBuddies() {
   // attach an unordered list of the 'buddies' in the aside
   // insert your aside as a child element of rivendell
   console.log("them");
+  //make aside/ ul  and grab rivendell
   var mkaside = document.createElement("aside");
-  var asideul = document.createElement("ul");
-  grabrivendell = document.querySelector("article.a.Rivendell");
-
-  for (i=0; i<buddies; i++) {
-    var mkbudddiesli = document.createElement('li');
-    mkbuddiesli.innerHTML = buddies[i]; 
-    asideul.appendChild(mkbuddiesli);
-
+  console.log(mkaside); //check
+  var mkbuddiesul = document.createElement("ul");
+  console.log(mkbuddiesul);//check
+  var grabrivendell = document.querySelector(".aRivendell");//check rivendell selector
+  console.log(grabrivendell);//check
+  
+   //make list items and populate ul
+  for (i=0; i<buddies.length; i++) {
+    var mkbudddiesli = document.createElement("li");
+    mkbudddiesli.innerHTML = buddies[i]; 
+    mkbuddiesul.appendChild(mkbudddiesli);
   }
-mkaside.appendChild(asideul);
-grabrivendell.appendChild(mkaside);
-console.log(mkBuddies);
+  console.log(mkbuddiesul);
+//put ul in the aside  and the aside in rivendell
+mkaside.appendChild(mkbuddiesul);
+grabrivendell.appendChild(mkbuddiesul);
+
 
 }
 makeBuddies();
